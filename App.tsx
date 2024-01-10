@@ -11,6 +11,8 @@ import Status from './src/screens/Status';
 import FriendProfile from './src/screens/FriendProfile';
 import EditProfile from './src/screens/EditProfile';
 import Ionic from 'react-native-vector-icons/Ionicons';
+import Camera from './src/components/Camera';
+import Photo from './src/components/Photo';
 
 const App = () => {
   const Stack = createNativeStackNavigator();
@@ -62,6 +64,8 @@ const App = () => {
         <Stack.Screen name="Status" component={Status} />
         <Stack.Screen name="FriendProfile" component={FriendProfile} />
         <Stack.Screen name="EditProfile" component={EditProfile} />
+        <Stack.Screen name="Camera" component={Camera} />
+        <Stack.Screen name="Photo" component={Photo} />
       </Stack.Navigator>
     </NavigationContainer>
   );

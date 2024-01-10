@@ -50,6 +50,10 @@ const storyInfo: StoryInfoTypes[] = [
 ];
 const Stories = () => {
   const navigation = useNavigation<StackNavigationProp<any>>();
+  // const onPressPlusIcon = () => {
+  //   // 카메라 열리기
+  //   console.log('clicked');
+  // };
 
   return (
     <ScrollView
@@ -82,16 +86,18 @@ const Stories = () => {
                       right: 5,
                       zIndex: 1,
                     }}>
-                    <Entypo
-                      name="circle-with-plus"
-                      style={{
-                        fontSize: 20,
-                        color: '#405de6',
-                        backgroundColor: 'white',
-                        borderRadius: 10,
-                        overflow: 'hidden',
-                      }}
-                    />
+                    <TouchableOpacity onPress={() => navigation.push('Photo')}>
+                      <Entypo
+                        name="circle-with-plus"
+                        style={{
+                          fontSize: 20,
+                          color: '#405de6',
+                          backgroundColor: 'white',
+                          borderRadius: 10,
+                          overflow: 'hidden',
+                        }}
+                      />
+                    </TouchableOpacity>
                   </View>
                 )}
 

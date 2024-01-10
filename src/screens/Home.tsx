@@ -48,6 +48,7 @@ const Home = () => {
       </View>
       <ScrollView>
         <Stories />
+
         {/* Posts */}
       </ScrollView>
     </SafeAreaView>
